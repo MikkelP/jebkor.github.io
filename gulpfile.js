@@ -8,7 +8,7 @@ const clean = require("gulp-clean");
 
 const scssUrl = {
     scssInput: "./style.scss",
-    scssOutput: "public/css"
+    scssOutput: "./public/css"
 };
 
 //#region SASS

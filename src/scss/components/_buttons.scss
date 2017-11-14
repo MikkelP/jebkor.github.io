@@ -1,9 +1,0 @@
-.button {
-    background: color(second, base);
-
-    &:active,
-    &:hover,
-    &:focus {
-        background: darken(color(second, base), 10%);
-    }
-}

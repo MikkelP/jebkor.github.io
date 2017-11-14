@@ -1,36 +1,45 @@
-ul.menu {
+.menu a {
+    padding: .7rem .9rem;
+}
+ul.listing {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    max-width: 550px;
 
-    &.vertical li {
+    h3 {
+        border-left: 8px solid #444;
+        padding-left: 10px;
+    }
+    span {
+        font-size: 10px;
+        color: #777;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        float: right;
+        font-weight: 900;
+    }
 
+    li {
         a {
-            @extend %transition;
-            color: color(fourth, base);
+            border-bottom: 1px dotted #eaeaea;
+            color: #333;
             
-            display: block;
-            padding: 7px 15px;
-            text-decoration: none;
-        }
 
-        &:hover {
-            @extend %transition;
-            text-decoration: underline;
-            
-        }
-    }
-    &.horizontal li {
-        display: inline-block;
-    }
-
-    a {
-        border: none;
-
-        &:hover {
-            border: none;
+            &:hover {
+                color: #555;
+                border-bottom: 1px solid #555;
+            }
         }
     }
 }
 
 
+.menu.vertical {
+    li a {
+        padding-left: 0;
+        color: #cecece;
+
+        &:hover {
+            color: darken(#cecece, 10%);
+        }
+    }
+}
