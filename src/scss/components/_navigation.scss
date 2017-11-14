@@ -1,0 +1,11 @@
+.navigation {
+    background-color: color(fourth, darken);
+
+    a {
+        border: none;
+
+        &:hover {
+            border: none;
+        }
+    }
+}

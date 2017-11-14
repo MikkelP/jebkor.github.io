@@ -1,0 +1,31 @@
+.sidebar {
+    background-color: color(navigation_bg-color);
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100% !important;
+    width: 250px;
+}
+
+.content {
+    padding-left: 275px;
+
+    @include bp(phone) {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    @include bp(tablet) {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    @include bp(laptop) {
+        padding-left: 275px;
+        padding-right: 0;
+
+    }
+}

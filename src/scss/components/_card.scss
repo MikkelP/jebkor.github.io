@@ -1,0 +1,21 @@
+.card {
+    width: 100%;
+    border-radius: $card-border-radius;
+    box-shadow: $material-shadow;
+    position: relative;
+    top: 0;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &__header {
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+        padding: 5px 15px;
+        background-color: darken(#fff, 5%);
+        font-weight: 600;
+        font-size: calcRem(30px);
+    }
+
+    &__content {
+        padding: 15px;
+    }
+}

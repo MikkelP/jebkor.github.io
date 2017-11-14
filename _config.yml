@@ -79,6 +79,7 @@ plugins:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
+  sass_dir: src/scss
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
@@ -93,3 +94,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - node_modules
+  - package.json
+  - package-lock.json
