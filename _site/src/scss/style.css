@@ -6653,7 +6653,8 @@ body {
   padding: 15px 30px;
 }
 
-.sidebar {
+.sidebar,
+.off-canvas {
   background-color: #444;
   padding: 15px;
   position: absolute;
@@ -6662,34 +6663,36 @@ body {
   height: 100% !important;
   width: 250px;
 }
-
-.sidebar hr {
+.sidebar hr,
+.off-canvas hr {
   border-color: #555;
   width: 80%;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.sidebar img {
+.sidebar img,
+.off-canvas img {
   border-radius: 50%;
   width: 150px;
 }
-
-.sidebar h1 {
+.sidebar h1,
+.off-canvas h1 {
   text-align: center;
 }
-
-.sidebar .lead.light {
+.sidebar .lead.light,
+.off-canvas .lead.light {
   font-size: 16px;
   font-size: 1rem;
   color: #cecece;
 }
 
-.sidebar-links a {
+.sidebar-links a,
+.offcanvas-links a {
   color: #cecece;
 }
-.sidebar-links a:hover {
+.sidebar-links a:hover,
+.offcanvas-links a:hover {
   color: #b5b5b5;
 }
 
@@ -6697,8 +6700,17 @@ body {
   background-color: #444;
 }
 
+.title-bar {
+  background-color: transparent;
+}
+.title-bar .menu-icon::after {
+  background-color: #333;
+  box-shadow: 0 7px 0 #333, 0 14px 0 #333;
+}
+
 .content {
   max-width: 1024px;
+  min-height: 100vh;
   padding-left: 250px;
 }
 @media (max-width: 39.9375em) {
@@ -6726,6 +6738,7 @@ body {
 
 ul.listing {
   list-style: none;
+  margin-left: 0;
   max-width: 550px;
 }
 ul.listing h3 {
@@ -6763,10 +6776,12 @@ ul.listing li a:hover {
 .post-title {
   font-size: 40px;
   font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 45px;
 }
 .post-date {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 10px;
+  font-size: 0.625rem;
   margin-top: 5px;
   margin-bottom: 5px;
   font-weight: 900;
@@ -6776,4 +6791,58 @@ ul.listing li a:hover {
 
 .related {
   margin-top: 125px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 15px;
+}
+footer .footer-thanks {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 39.9375em) {
+  footer .footer-thanks {
+    width: 100%;
+  }
+}
+footer .share-page {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 39.9375em) {
+  footer .share-page {
+    width: 100%;
+    margin-top: 45px;
+  }
+}
+
+.share-button-twitter {
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-right: 15px;
+}
+
+.share-button-facebook {
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-right: 15px;
+}
+
+.share-button-google {
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-right: 15px;
+}
+
+.might-need-this-for-later {
+  display: inline-block;
+  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }

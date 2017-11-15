@@ -3,10 +3,12 @@
 
     &-title {
         @include font-size(40px);
+        font-weight: 800;
+        margin-bottom: 45px;
     }
 
     &-date {
-        @include font-size(16px);
+        @include font-size(10px);
         margin-top: 5px;
         margin-bottom: 5px;
         font-weight: 900;
@@ -18,4 +20,50 @@
 
 .related {
     margin-top: 125px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 15px;
+
+    .footer-thanks {
+        width: 50%;
+        float: left;
+
+        @include bp(phone) {
+            width: 100%;
+        }
+    }
+
+    .share-page {
+        width: 50%;
+        float: left;
+
+        @include bp(phone) {
+            width: 100%;
+            margin-top: 45px;
+        }
+    }
+}
+
+
+@each $button in "twitter" "facebook" "google" {
+    .share-button-#{$button} {
+        @include font-size(22px);
+        margin-right: 15px;
+    }
+}
+
+
+.might-need-this-for-later {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
