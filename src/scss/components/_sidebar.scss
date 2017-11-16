@@ -45,6 +45,7 @@
 
 .title-bar {
     background-color: transparent;
+    position: relative;
 
     .menu-icon {
         &::after {
@@ -52,25 +53,42 @@
             box-shadow: 0 7px 0 #333, 0 14px 0 #333;
         }
     }
+
+    .logo {
+        @extend %absolute-horizontal;
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    
 }
+
+
+.big-logo {
+    @extend %absolute-horizontal;
+        margin-top: 15px;
+        width: 150px;
+    }
+
 
 .content {
     max-width: 1024px;
     min-height: 100vh;
-    padding-left: 250px;
+    margin-left: 250px;
+    position: relative;
 
     @include bp(phone) {
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     @include bp(tablet) {
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     @include bp(laptop) {
-        padding-left: 250px;
-        padding-right: 0;
+        margin-left: 250px;
+        margin-right: 0;
     }
 }
