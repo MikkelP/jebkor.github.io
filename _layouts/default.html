@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-{% include head.html %} {% include meta.html %}
+{% include head.html %} 
+{% include meta.html %}
+
+{% if jekyll.environment == 'production' %} 
+  {% include analytics.html %} 
+{% endif %}
+
 
 <body>
   <div class="off-canvas-wrapper">
@@ -56,8 +62,6 @@
       $(document).foundation();
     });
   </script>
-
-   {% include analytics.html %}
 </body>
 
 </html>
