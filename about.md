@@ -1,35 +1,30 @@
 ---
 layout: page
-title: About me
 permalink: /about/
 ---
 
+## Hi, my name is Jesper. Stay a while, and listen.
+<br>
 
-### Stay a while, and listen
+Being able to quickly find answers and to gain inspiration, I wanted to keep a blog about all things frontend and other things I find interesting in the industry.
 
-My name is Jesper Brinch Korsbakke, or also known as "jebkor".
+**Disclaimer: May contain nuts, rants about health and other unrelated things. You have been warned 😈**
 
-As stated on the frontpage of my blog, I am a frontend developer. I have an immense interest in the industry and a day dooesn't go by, where I'm catching up on either Reddit or some other news site.
-
-I do frontend development, but have an interest in the design and user-experience as well. I find it's very important areas in any application for website, that's user driven.
-
-Besides me doing frontend development, I also try to do other things. Such other things could be, but are not limited to:
-* Running
-* CrossFit
-* Gaming
-* Watching shows
-
-I find that in an industry that is very sedatary, it's important to keep the body going and treating it well. Running has been a way for me to keep myself healthy and for me to meditate during rough times.
-
-I've recently started doing CrossFit. Not ''real'' CrossFit with snatches, jerks, clean hangs... *continues forever with CrossFit jargon, that no-one understands anyways*.
-
-Besides that, I like to do some good ol' gaming. Be it video games, tabletop games or any other kind of games, I'm in. I am a nerd anyways 😊
-
-I think those are the most important details about me for you to get a good idea about, who I am. If you have questions about me, feel free to either send me a mail or shoot a DM on twitter, then I will try to answer to the best of my abilities.
-
-[jesper@jebkor.dk](mailto:jesper@jebkor.dk)
+<br>
 
 
+I have been working as a frontend developer for the past three years. I have a background as a "Multimedia Designer" and I always swore to myself, never to get into anything related to coding. Well, would you look at that!.
 
-## Have a good one
+I am currently working for a company in Denmark called "Insero A/S", who takes the lead in the green transition with sustainable energy solutions. Before that, I worked in a small five-man company who created websites for business and self-serivce solutions for electricity suppliers.
+
+
+In my spare time I like to work on different side projects, either to improve my workflow, understand a new framework or just make silly things. Oh and I like running and do CrossFit as well. It's pretty dope! 🏋🏼
+
+
+Most of my projects and and code is available online on my [GitHub](https://github.com/jebkor). Feel free to take a look - and under my profile you'll find links to the different corners of the internet I live in.
+
+
+I want to be one of the cool kids, so I've created a GitHub AMA [repo](https://github.com/jebkor/ama), where you can open issues to ask me questions. If you don't want to do that, send me a [mail](mailto:jesper@jebkor.dk). If you don't like **that**, send me a DM on [Twitter](https://twitter.com/jebkor_).
+
+Because the internet is a big place, standard disclaimers about these being my views and not my employer's apply.
 
