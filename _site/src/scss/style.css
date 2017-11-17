@@ -16,6 +16,15 @@
   max-width: 100%;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 body {
   font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -188,6 +197,26 @@ ul.listing li a:hover {
   color: #b5b5b5;
 }
 
+footer {
+  bottom: 0;
+  width: 100%;
+  padding: 0 15px;
+}
+@media (max-width: 39.9375em) {
+  footer {
+    position: relative;
+    text-align: center !important;
+  }
+  footer .cell:last-child {
+    text-align: center !important;
+  }
+}
+@media (min-width: 40em) {
+  footer {
+    position: absolute;
+  }
+}
+
 .post {
   margin-top: 30px;
 }
@@ -209,32 +238,6 @@ ul.listing li a:hover {
 
 .related {
   margin-top: 125px;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0 15px;
-}
-footer .footer-thanks {
-  width: 50%;
-  float: left;
-}
-@media (max-width: 39.9375em) {
-  footer .footer-thanks {
-    width: 100%;
-  }
-}
-footer .share-page {
-  width: 50%;
-  float: left;
-}
-@media (max-width: 39.9375em) {
-  footer .share-page {
-    width: 100%;
-    margin-top: 45px;
-  }
 }
 
 .share-button-twitter {

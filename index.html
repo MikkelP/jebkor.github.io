@@ -24,13 +24,8 @@ title: Home
 
         <br><br><br>
 
-        <h1 class="heading-two">Welcome. Pull up a chair by the hearth!</h1>
-        <p>My name is Jesper Brinch Korsbakke, but people online just call  me "jebkor". 👊</p>
-        <p>I am a frontend developer but if you want a complete description of who I am and what I do, checkout my "About" page. It will tell you a lot more about me and my interests.</p>
-        <p>This is my blog, where I will sometimes make sense, and other times just ramble.</p>
-        <p>Thanks for stopping by.</p>
-
-        <br><br><br>        
+        <h1 class="heading-two">Welcome. Pull up a chair!</h1>
+               
 
         <ul class="listing">
           {% for post in site.posts %} {% unless post.draft %} {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}

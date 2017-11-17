@@ -23,31 +23,7 @@
 }
 
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 0 15px;
 
-    .footer-thanks {
-        width: 50%;
-        float: left;
-
-        @include bp(phone) {
-            width: 100%;
-        }
-    }
-
-    .share-page {
-        width: 50%;
-        float: left;
-
-        @include bp(phone) {
-            width: 100%;
-            margin-top: 45px;
-        }
-    }
-}
 
 
 @each $button in "twitter" "facebook" "google" {
