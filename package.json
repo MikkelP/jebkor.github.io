@@ -54,6 +54,7 @@
       "nprogress": "^0.2.0",
       "numeral": "^2.0.6",
       "paper-ripple": "^0.3.0",
+      "pygments-css": "^1.0.0",
       "tslib": "^1.7.1"
    }
 }

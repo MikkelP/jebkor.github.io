@@ -7,8 +7,8 @@ const less = require("gulp-less");
 const clean = require("gulp-clean");
 
 const scssUrl = {
-    scssInput: "./style.scss",
-    scssOutput: "./public/css"
+    scssInput: "./src/scss/style.scss",
+    scssOutput: "./_site/src/css"
 };
 
 //#region SASS
@@ -29,7 +29,7 @@ gulp.task("sass", function () {
 
 // used for deleting the old, "cached" version of the output css
 gulp.task("sass-clean", function () {
-    return gulp.src("public/css/style.css").pipe(clean());
+    return gulp.src("_site/src/css/style.css").pipe(clean());
 });
 
 // used for watching our own scss for compilation

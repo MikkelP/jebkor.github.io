@@ -28,3 +28,15 @@ h4 {
     font-weight: 800;
     margin-bottom: 15px;
 }
+
+
+blockquote {
+    background: #eee;
+    outline: 1px solid #E2E2E2;
+    padding: .5625rem 1.25rem .5625rem 1.1875rem;
+    
+    > * {
+        color: #444 !important;
+        margin: 0;
+    }
+}
