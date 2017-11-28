@@ -5,11 +5,23 @@ const ap = require("gulp-autoprefixer");
 const bs = require("browser-sync").create();
 const less = require("gulp-less");
 const clean = require("gulp-clean");
+const cp = require("child_process");
+var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
+
 
 const scssUrl = {
     scssInput: "./src/scss/style.scss",
-    scssOutput: "./_site/src/css"
+    scssOutput: "./public/css"
 };
+
+
+
+gulp.task("jb", function(done) {
+    return cp.spawn(jekyll, ["build", "--draft"], { stdio: "inherit" }).on("close", done);
+});
+
+
+
 
 //#region SASS
 // used for compiling our own SCSS
@@ -38,26 +50,41 @@ gulp.task("sass-watch", ["sass-clean", "sass"], function () {
 });
 
 
-gulp.task("serve", function () {
+gulp.task("serve", ["sass", "jb"], function () {
     bs.init({
-        proxy: "http://localhost:8080",
+        server: "_site",
         port: 1337
     });
 
-    gulp.watch(["src/scss/**/*"], ["sass-clean", "sass"]);
+});
+
+
+
+gulp.task("watch", function() {
+    gulp.watch(["./src/scss/**/*.scss", "./src/scss/*.scss"], ["sass"]);
+    gulp.watch(["index.html","_layouts/*.html","_posts/*","_includes/*.html","_drafts/*","**/*.html"],["jb"]);
 });
 //#endregion
+
+
+
+
+
+
+
+
+
+
 
 //#region file moving
-gulp.task("moment-i18n", function () {
+// font-awesome
+gulp.task("fs", function () {
     gulp
-        .src("./node_modules/moment/locale/**/*")
-        .pipe(gulp.dest("./src/locale/moment"));
+        .src("./node_modules/font-awesome/fonts/**/*")
+        .pipe(gulp.dest("./public/fonts"));
 });
 
-gulp.task("numeral-i18n", function () {
-    gulp
-        .src("./node_modules/numeral/locales/**/*")
-        .pipe(gulp.dest("./src/locale/numeral"));
-});
 //#endregion
+
+
+gulp.task("default", ["serve", "watch"]);
