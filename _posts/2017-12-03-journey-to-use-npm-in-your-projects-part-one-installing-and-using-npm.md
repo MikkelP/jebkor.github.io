@@ -2,7 +2,7 @@
 layout: post
 title: Journey to use NPM in your projects. Part One - Installing and using NPM
 description: Part One of many blogposts about NPM and how you can use them, in your own projects
-draft: true
+draft: false
 ---
 
 Why hello there.
